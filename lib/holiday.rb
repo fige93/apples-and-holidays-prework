@@ -59,6 +59,7 @@ end
 
 
 def all_holidays_with_bbq(holiday_hash)
+  bbqArray = []
   holiday_hash.each do |season, day|
     day.each do |day, utility|
       binding.pry
@@ -67,9 +68,7 @@ def all_holidays_with_bbq(holiday_hash)
       end
     end
   end
-  # return an array of holiday names (as symbols) where supply lists
-  # include the string "BBQ"
-
+  bbqArray
 end
 
 
