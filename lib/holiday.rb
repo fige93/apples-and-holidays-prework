@@ -62,7 +62,6 @@ def all_holidays_with_bbq(holiday_hash)
   bbqArray = []
   holiday_hash.each do |season, day|
     day.each do |day, utility|
-      binding.pry
       if utility.include?("BBQ")
         bbqArray.push(day)
       end
