@@ -62,7 +62,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, day|
     day.each do |day, utility|
       binding.pry
-      if day.values.flatten(1).include?("BBQ")
+      if utility.include?("BBQ")
         day
       end
     end
